@@ -43,6 +43,7 @@ canvas,
 svg {
   display: block;
   max-width: 100%;
+  width: 100%;
 }
 
 input,
@@ -123,14 +124,14 @@ header button {
 
 .gallery figure {
   position: relative;
+  margin-bottom: 1.5rem;
 }
 
 .gallery figcaption {
   position: absolute;
   bottom: 0;
   left: 0;
-  padding-left: 2rem;
-  padding-bottom: 2rem;
+  padding: 0 2rem 2rem;
 }
 
 .gallery figcaption h2 {
