@@ -97,3 +97,21 @@ p {
   font-size: 0.875rem;
   line-height: 2;
 }
+
+header {
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--grey-regular);
+}
+
+header button {
+  background-color: transparent;
+  border: none;
+  text-transform: uppercase;
+  color: var(--grey-darker);
+  font-size: 0.6rem;
+  line-height: 1.22;
+  letter-spacing: 2px;
+}
