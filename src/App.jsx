@@ -1,14 +1,10 @@
-import logo from './assets/galleria.svg';
+import Header from './components/Header';
 import starryNightSmall from './assets/starry-night/hero-small.jpg';
 
 function App() {
   return (
     <>
-      <header>
-        <img src={logo} alt="Galleria logo" />
-
-        <button>start slideshow</button>
-      </header>
+      <Header />
       <section className="gallery">
         <figure>
           <img src={starryNightSmall} alt="Starry Night" />
