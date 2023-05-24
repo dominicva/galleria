@@ -24,8 +24,8 @@ export default function PaintingDetails() {
           <img src={`/src/${painting.artist.image.slice(1)}`} />
         </figcaption>
       </figure>
-      <section>
-        <span>{painting.year}</span>
+      <section className="painting-description">
+        <span className="display-text">{painting.year}</span>
         <p>{painting.description}</p>
       </section>
     </article>

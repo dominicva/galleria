@@ -11,8 +11,8 @@
   --white: #fff;
 
   /* typography */
-  --display-size: 200px;
-  --display-line-height: 150px;
+  --display-size: 100px;
+  --display-line-height: 100px;
   --display-weight: bold;
 }
 
@@ -167,6 +167,7 @@ header img {
 
 .painting-details figure {
   position: relative;
+  margin-bottom: 30%;
 }
 
 .painting-details figcaption {
@@ -184,6 +185,31 @@ header img {
 .painting-details figcaption h3 {
   color: var(--grey-darker);
   margin-bottom: 1.5rem;
+}
+
+.painting-details figcaption img {
+  width: 64px;
+  height: 64px;
+}
+
+.painting-details .painting-description {
+  /* margin-top: 4rem; */
+}
+
+.painting-description .display-text {
+  display: block;
+  text-align: right;
+  font-size: var(--display-size);
+  font-weight: var(--display-weight);
+  line-height: var(--display-line-height);
+  transform: translate(8px, 25px);
+  color: var(--grey-lighter);
+}
+
+.painting-description p {
+  position: relative;
+  z-index: 10;
+  color: var(--grey-darker);
 }
 
 #error-page {
