@@ -1,13 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+
 import Root from './routes/root';
-import './index.css';
-import ErrorPage from './error-page';
 import Gallery from './routes/gallery';
 import PaintingDetails, {
   loader as paintingDetailsLoader,
 } from './components/PaintingDetails';
+import ErrorPage from './error-page';
+
+import './index.css';
 
 const router = createBrowserRouter([
   {
@@ -16,7 +18,7 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       {
-        path: '/gallery',
+        path: '/',
         element: <Gallery />,
       },
       {

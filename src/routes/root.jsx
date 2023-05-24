@@ -1,4 +1,4 @@
-import { Outlet, Link } from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
 import logo from '../assets/galleria.svg';
 
 export default function Root() {
@@ -6,7 +6,6 @@ export default function Root() {
     <>
       <header>
         <img src={logo} alt="Galleria logo" />
-
         <button>start slideshow</button>
       </header>
       <main>

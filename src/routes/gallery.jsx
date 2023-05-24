@@ -1,8 +1,10 @@
-// import { Link } from "react-router-dom";
 import PaintingPreview from '../components/PaintingPreview';
-import paintings from '../data.json';
+// import paintings from '../data.json';
+import { getAllPaintings } from '../paintings';
 
 export default function Gallery() {
+  const paintings = getAllPaintings();
+
   return (
     <section className="gallery">
       {paintings.map(({ name, artist, images }) => (

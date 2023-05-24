@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 export default function PaintingPreview({ name, artist, imageSrc }) {
   return (
-    <Link to={`${name}`}>
+    <Link to={`gallery/${name}`}>
       <figure>
         <img src={imageSrc} alt={name} />
         <figcaption>

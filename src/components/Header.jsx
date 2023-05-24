@@ -4,7 +4,6 @@ export default function Header() {
   return (
     <header>
       <img src={logo} alt="Galleria logo" />
-
       <button>start slideshow</button>
     </header>
   );

@@ -1,19 +1,31 @@
 import { getPainting } from '../paintings';
 import { useLoaderData } from 'react-router-dom';
-// import paintings from '../data.json';
 
 export function loader({ params }) {
   const painting = getPainting(params.painting);
-  // console.log(painting);
   return { painting };
 }
 
 export default function PaintingDetails() {
   const { painting } = useLoaderData();
-  console.log(painting);
+
   return (
-    <div>
-      <h1>{painting.name}</h1>
-    </div>
+    <article>
+      <figure>
+        <img
+          src={`/src/${painting.images.hero.small.slice(1)}`}
+          alt={painting.name}
+        />
+        <figcaption>
+          <h1>{painting.name}</h1>
+          <h2>{painting.artist.name}</h2>
+          <img src={`/src/${painting.artist.image.slice(1)}`} />
+        </figcaption>
+      </figure>
+      <section>
+        <span>{painting.year}</span>
+        <p>{painting.description}</p>
+      </section>
+    </article>
   );
 }
