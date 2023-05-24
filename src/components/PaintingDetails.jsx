@@ -10,15 +10,17 @@ export default function PaintingDetails() {
   const { painting } = useLoaderData();
 
   return (
-    <article>
+    <article className="painting-details">
       <figure>
         <img
           src={`/src/${painting.images.hero.small.slice(1)}`}
           alt={painting.name}
         />
         <figcaption>
-          <h1>{painting.name}</h1>
-          <h2>{painting.artist.name}</h2>
+          <hgroup>
+            <h2>{painting.name}</h2>
+            <h3 className="subhead-1">{painting.artist.name}</h3>
+          </hgroup>
           <img src={`/src/${painting.artist.image.slice(1)}`} />
         </figcaption>
       </figure>

@@ -82,7 +82,8 @@ h3 {
   line-height: 1.22;
 }
 
-h4 {
+h4,
+.subhead-1 {
   font-weight: 400;
   font-size: 0.94rem;
   line-height: 1.3;
@@ -158,6 +159,31 @@ header img {
 
 .gallery figcaption h3 {
   color: var(--grey-regular);
+}
+
+.painting-details {
+  padding: 1.5rem;
+}
+
+.painting-details figure {
+  position: relative;
+}
+
+.painting-details figcaption {
+  background-color: var(--white);
+  padding: 1.5rem;
+  position: absolute;
+  top: 80%;
+  width: 85%;
+}
+
+.painting-details figcaption h2 {
+  margin-bottom: 0.5rem;
+}
+
+.painting-details figcaption h3 {
+  color: var(--grey-darker);
+  margin-bottom: 1.5rem;
 }
 
 #error-page {
