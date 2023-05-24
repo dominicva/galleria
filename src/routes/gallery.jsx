@@ -1,3 +1,4 @@
+// import { Link } from "react-router-dom";
 import PaintingPreview from '../components/PaintingPreview';
 import paintings from '../data.json';
 

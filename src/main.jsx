@@ -5,7 +5,9 @@ import Root from './routes/root';
 import './index.css';
 import ErrorPage from './error-page';
 import Gallery from './routes/gallery';
-import PaintingDetails from './components/PaintingDetails';
+import PaintingDetails, {
+  loader as paintingDetailsLoader,
+} from './components/PaintingDetails';
 
 const router = createBrowserRouter([
   {
@@ -20,6 +22,7 @@ const router = createBrowserRouter([
       {
         path: '/gallery/:painting',
         element: <PaintingDetails />,
+        loader: paintingDetailsLoader,
       },
     ],
   },

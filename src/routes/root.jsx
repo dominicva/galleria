@@ -1,4 +1,4 @@
-import { Outlet } from 'react-router-dom';
+import { Outlet, Link } from 'react-router-dom';
 import logo from '../assets/galleria.svg';
 
 export default function Root() {
