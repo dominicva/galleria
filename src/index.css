@@ -118,6 +118,10 @@ header button {
   letter-spacing: 2px;
 }
 
+header img {
+  width: unset;
+}
+
 .gallery {
   padding: 1.5rem;
 }
