@@ -217,7 +217,7 @@ header img {
   font-size: var(--display-size);
   font-weight: var(--display-weight);
   line-height: var(--display-line-height);
-  transform: translate(4px, -25px);
+  transform: translateY(-25px);
   color: var(--grey-lighter);
   margin-bottom: -3.5rem;
   position: relative;
