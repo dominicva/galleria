@@ -21,13 +21,13 @@ export default function PaintingDetails() {
             <h2>{painting.name}</h2>
             <h3 className="subhead-1">{painting.artist.name}</h3>
           </hgroup>
-          <img src={`/src/${painting.artist.image.slice(1)}`} />
+          <section className="painting-description">
+            <img src={`/src/${painting.artist.image.slice(1)}`} />
+            <span className="display-text">{painting.year}</span>
+            <p>{painting.description}</p>
+          </section>
         </figcaption>
       </figure>
-      <section className="painting-description">
-        <span className="display-text">{painting.year}</span>
-        <p>{painting.description}</p>
-      </section>
     </article>
   );
 }

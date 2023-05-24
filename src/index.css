@@ -162,38 +162,35 @@ header img {
 }
 
 .painting-details {
-  padding: 1.5rem;
-}
-
-.painting-details figure {
   position: relative;
-  margin-bottom: 30%;
+  padding: 1.5rem;
 }
 
 .painting-details figcaption {
-  background-color: var(--white);
   padding: 1.5rem;
   position: absolute;
-  top: 80%;
+  top: 70%;
+  left: 0;
+}
+
+.painting-details hgroup {
+  background-color: var(--white);
+  padding: 1.5rem;
   width: 85%;
 }
 
-.painting-details figcaption h2 {
+.painting-details h2 {
   margin-bottom: 0.5rem;
 }
 
-.painting-details figcaption h3 {
+.painting-details h3 {
   color: var(--grey-darker);
-  margin-bottom: 1.5rem;
 }
 
-.painting-details figcaption img {
+.painting-description img {
   width: 64px;
   height: 64px;
-}
-
-.painting-details .painting-description {
-  /* margin-top: 4rem; */
+  margin-left: 1.25rem;
 }
 
 .painting-description .display-text {
@@ -202,13 +199,14 @@ header img {
   font-size: var(--display-size);
   font-weight: var(--display-weight);
   line-height: var(--display-line-height);
-  transform: translate(8px, 25px);
+  transform: translate(4px, -25px);
   color: var(--grey-lighter);
+  margin-bottom: -3.5rem;
+  position: relative;
+  z-index: -10;
 }
 
 .painting-description p {
-  position: relative;
-  z-index: 10;
   color: var(--grey-darker);
 }
 
