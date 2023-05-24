@@ -1,4 +1,4 @@
-import logo from '../assets/galleria.svg';
+import logo from '/public/assets/galleria.svg';
 
 export default function Header() {
   return (

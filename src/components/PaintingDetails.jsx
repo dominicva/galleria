@@ -13,7 +13,7 @@ export default function PaintingDetails() {
     <article className="painting-details">
       <figure>
         <img
-          src={`/src/${painting.images.hero.small.slice(1)}`}
+          src={`${painting.images.hero.small.slice(1)}`}
           alt={painting.name}
         />
         <figcaption>
@@ -22,7 +22,7 @@ export default function PaintingDetails() {
             <h3 className="subhead-1">{painting.artist.name}</h3>
           </hgroup>
           <section className="painting-description">
-            <img src={`/src/${painting.artist.image.slice(1)}`} />
+            <img src={`${painting.artist.image.slice(1)}`} />
             <span className="display-text">{painting.year}</span>
             <p>{painting.description}</p>
           </section>

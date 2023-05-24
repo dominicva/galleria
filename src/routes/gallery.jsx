@@ -1,5 +1,4 @@
 import PaintingPreview from '../components/PaintingPreview';
-// import paintings from '../data.json';
 import { getAllPaintings } from '../paintings';
 
 export default function Gallery() {
@@ -12,7 +11,7 @@ export default function Gallery() {
           key={name}
           name={name}
           artist={artist.name}
-          imageSrc={`/src${images.thumbnail.slice(1)}`}
+          imageSrc={`${images.thumbnail.slice(1)}`}
         />
       ))}
     </section>
